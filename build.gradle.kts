@@ -27,12 +27,13 @@ dependencies {
     implementation("org.hamcrest:hamcrest:2.2")
     testImplementation("io.rest-assured:kotlin-extensions:4.4.0")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5:1.5.20")
+    testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0")
 }
 
 tasks.withType<KotlinCompile> {
     kotlinOptions {
         freeCompilerArgs = listOf("-Xjsr305=strict")
-        jvmTarget = "16"
+        jvmTarget = "11"
     }
 }
 
